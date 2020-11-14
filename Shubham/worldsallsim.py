@@ -106,7 +106,7 @@ oks = []
 id = []
 
 def menu():
-    os.system('clear')
+        os.system('clear')
         print logo
         print "\033[1;96m⊱⋕⊰══════════════════════════════════════════════⊱⋕⊰\n"
         print '\033[1;94m[1]\033[1;96m  Bangladesh   \033[1;94m[7]\033[1;96m  Korea'
