@@ -40,7 +40,7 @@ try:
     import mechanize
 except ImportError:
     os.system('pip2 install mechanize')
-    time.sleep(0.001)
+    time.sleep(0.0001)
     os.system('python2 nmbr.py')
 
 from multiprocessing.pool import ThreadPool
@@ -62,7 +62,7 @@ def psb(z):
         for e in z + '\n':
                 sys.stdout.write(e)
                 sys.stdout.flush()
-                time.sleep(0.003)
+                time.sleep(0.0003)
 
 def t():
     time.sleep(0.0001)
@@ -214,11 +214,11 @@ def action():
             print(logo)
             print
             psb (" Tool has been successfully updated")
-            time.sleep(2)
+            time.sleep(0.0001)
             os.system("python2 S.py")
 #       elif chb =='3':
 #           os.system('xdg-open https://www.facebook.com/100002059014174/posts/2677733205638620/?substory_index=0&app=fbl')
-#           time.sleep(1)
+#           time.sleep(0.0001)
 #           menu()
         elif bch =='0':
                 exb()
@@ -228,11 +228,11 @@ def action():
 
         xxx = str(len(id))
         psb ('[✓] Total Numbers: '+xxx)
-        time.sleep(0.001)
+        time.sleep(0.0001)
         psb ('[✓] Please wait, process is running ...')
-        time.sleep(0.001)
+        time.sleep(0.0001)
         psb ('[!] (for Exit) Press CTRL Then Press z')
-        time.sleep(0.001)
+        time.sleep(0.0001)
         print 50*'-'
         print
 
